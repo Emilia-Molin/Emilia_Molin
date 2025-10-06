@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Personlig css-fil-->
+        <link rel="stylesheet" href="styles.css">
+        <title>Emilia_Molin</title>
+        
+    </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand custom-navbar-brand" href="index.html">
+            Emilia Molin
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav custom-navbar-nav">
+                <li class="nav-item custom-nav-item">
+                  <a class="nav-link custom-nav-link" href="Konst.html">Art</a>
+                  <img src="images/ikoner_pensel.png" alt="Decoration Brush" class="nav-decoration">
+                </li>
+                <li class="nav-item custom-nav-item">
+                  <a class="nav-link custom-nav-link" href="webdesign.html">Ux-design</a>
+                  <img src="images/ikoner_digital.png" alt="Decoration pen" class="nav-decoration">
+                </li>
+                <li class="nav-item custom-nav-item">
+                  <a class="nav-link custom-nav-link" href="produktdesign.html">Product design</a>
+                  <img src="images/ikoner_penna.png" alt="Decoration pencil" class="nav-decoration">
+                </li>
+                <li class="nav-item custom-nav-item">
+                  <a class="nav-link custom-nav-link" href="om-mig.html">About me</a>
+                  <img src="images/ikoner_blomma.png" alt="Dekoration 2 Linnea flowers" class="nav-decoration">
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+  <main>
+    <div class="index-carousel-container container">
+          <!--Dekoration-->
+          <img src="images/vert_lång.png" class="vert-1" alt="decoration linnea flower">
+        <div class="carousel-background">
+          <!--Karusell template från bootstrap-->
+          <div id="slider1" class="carousel slide" data-bs-ride="carousel index-carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+              <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+            </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active index-carousel-item">
+                  <a href="Konst.html" class="Link-title"><h2 class="text-center Link-title">Art</h2></a>
+                  <a href="Konst.html">
+                  <img src="images/ujsebgousghbnoiudft.jpg" class="d-block w-100" alt="First slide, artworks">
+                  </a>
+                </div>
+                <div class="carousel-item index-carousel-item">
+                  <a href="webdesign.html" class="Link-title"><h2 class="text-center Link-title">Ux-design</h2></a>
+                  <a href="webdesign.html">
+                  <img src="images/big/ux.jpg" class="d-block w-100" alt="Second slide, ux-designs">
+                  </a>
+                </div>
+                <div class="carousel-item index-carousel-item">
+                  <a href="produktdesign.html" class="Link-title"><h2 class="text-center Link-title">Product design</h2></a>
+                  <a href="produktdesign.html">
+                  <img src="images/produkt.jpg" class="d-block w-100" alt="Third slide, procut designs">
+                  </a>
+                </div>
+              </div>
+            <a class="carousel-control-prev" href="#slider1" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slider1" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+      </div>
+    </div>
+  <img src="images/vert_lång.png" class="vert-2" alt="decoration linnea flower">
+  </div>
+  </main>
+    <footer class="site-footer fixed-bottom"> 
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <a href="#"><img src="images/logotyp1.png" class="logotyp" alt="logotype"></a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="list-group list-group-horizontal custom-list">
+                    <li class="list-group-item" data-hover-text="Se mer!"><a href="#"><img src="images/ikoner_instagram.png" class="ikon1" alt="instagram icon"></a></li>
+                    <li class="list-group-item" data-hover-text="Kontakta mig!"><a href="#"><img src="images/ikoner_mail.png" class="ikon2" alt="Mail icon"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    </footer>
+    </body>
+</html>

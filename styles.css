@@ -1,0 +1,456 @@
+/*Typsnitt
+kod från https://www.realtimecolors.com utifrån mina valda typsnitt*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Domine:400');
+body {
+  font-family: 'Domine';
+  font-weight: 400;
+  background-color: var(--background);
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: var(--text);
+}
+html {font-size: 100%;}
+
+/*Färger
+kod från https://www.realtimecolors.com utifrån min färgpalett, variabeln tillåter mig att snabbt testa/ändra färgpaletten*/
+:root {
+    --text: #393936;
+    --background: #F7F2F2;
+    --primary: #dae7da;
+    --secondary: #718e76;
+    --secondary-light: #9cb09f;
+    --secondary-new: #acb7ae;
+    --accent: #f9c2b8;
+    --accent-dark: #f59a8a;
+  }
+
+
+/*----- Header -----*/
+.site-header {
+  background: var(--primary);
+  padding-bottom: 30px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+.custom-navbar {
+  background-color: var(--primary);
+  padding: 1rem;
+}
+.custom-navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: var(--text);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+.custom-navbar-brand:hover {
+  color: var(--accent-dark);
+}
+.custom-navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.custom-nav-item {
+  text-align: center;
+}
+.custom-nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--accent-dark);
+  text-decoration: none;
+  padding-bottom: 0%;
+}
+.custom-nav-link:hover {
+  color: var(--accent);
+}
+.custom-nav-link:active {
+  color: var(--secondary);
+}
+/*Chatgpt - hjälp att placera dekorationerna rätt*/
+.nav-decoration {
+  display: block;
+  margin: 5px auto 0;
+  max-width: 120px;
+  height: auto;
+}
+
+/*Stilsättning av hamburgarmeny ikon - använt chatgpt för att definera klasser och bakgrunds bild*/
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22rgba%28255, 255, 255, 1%29%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbar-toggler {
+  border: 3px solid var(--secondary-light);
+  background-color: var(--primary);
+  border-radius: 15px;
+  padding: 5px;
+}
+.navbar-toggler:hover {
+  box-shadow: 0 0 10px var(--secondary);
+  background-color: var(--secondary);
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 5px var(--accent);
+}
+
+
+
+
+
+
+/*----- index.html -----*/
+/*Karusell*/
+.carousel-background {
+  background-color: var(--accent); 
+  padding: 20px 100px;
+}
+.index-carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-carousel {
+  max-width: 100%; 
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.index-carousel-item {
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+  background-color: var(--accent);
+}
+.index-carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.carousel-indicators li {
+  background-color: var(--secondary);
+}
+.carousel-indicators .active {
+  background-color: var(--accent-dark);
+}
+
+.Link-title{
+  text-decoration: none;
+  color: var(--text)
+}
+
+.Link-title:hover{
+  color: var(--secondary-light)
+}
+
+/*Dekorationer*/
+.vert-1 {
+margin-right: auto;
+margin-left: 10px;
+height: 500px;
+}
+.vert-2 {
+  transform: scaleX(-1);
+  margin-left: auto;
+  height: 500px;
+}
+
+
+
+/*----- om-mig.html -----*/
+
+.profile-text{
+margin: auto;
+width: 50%;
+text-align: center;
+padding-top: 10px;
+}
+.profile-pic {
+  max-width: 300px;
+  max-height: 200px;
+}
+.profile {
+  margin: auto;
+  width: 50%;
+  padding-top: 20px;
+  }
+
+  /*Karusell*/
+  .mig-carousel {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .mig-carousel-item {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 450px;
+    background-color: var(--accent);
+  }
+  .mig-carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .mig-lank{
+    text-decoration: none;
+    color: var(--background);
+    display: inline-block;
+    padding: 1px 15px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  .em-custom {
+    color: var(--background);
+    border-radius: 10px;
+    padding: 1px 20px;
+    box-shadow: none;
+  }
+ .title-container-mig {
+  display: inline-block;
+  background-color: rgba(0,0,0,0.5); 
+  border-radius: 10px;
+  padding: 5px 20px;
+  color: white;
+  text-align: center;
+}
+.title-container-mig h1,
+.title-container-mig p {
+  margin: 0;
+}
+
+  /*Dekoration*/
+  .mig-dec {
+  display: flex;
+  justify-content: center;
+  margin: 0; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
+  .mig-dec img{
+  max-width: 1200px;
+  }
+
+
+
+/*Visitkort*/
+.img-thumbnail {
+  max-width: 200px;
+}
+
+
+
+/*----- konst.html + produktdesign.html -----*/
+
+/*Collage, anpassad från chatgpt kod
+.collage-container {
+  max-height: 600px;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--accent);
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 60px;
+}*/
+
+
+
+.voi-item{
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.collage-container {
+  width: 1400px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--accent);
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.collage-text {
+  position: relative;
+  width: calc(33.333% - 10px); 
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.small-items {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  width: calc(33.333% - 10px); 
+}
+.small1,
+.small2 {
+  width: 100%;
+  height: auto;
+}
+.collage-item {
+  position: relative;
+  width: 100%;
+  max-width: calc(33.333% - 10px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collage-thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.collage-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.large-image {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.horisontell {
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.horisontell-2 {
+  padding-bottom: 200px;
+}
+.page-dec {
+  max-width: 1000px;
+}
+
+
+.horizontal-modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+
+.modal-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 6px;
+}
+
+
+.modal-text {
+  max-width: 45%;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Georgia', serif;
+}
+
+/*----- Footer -----
+hover animationer genom chatgpt, samt placering genom custom-list */
+.site-footer {
+  background-color: var(--primary);
+  padding: 10px;
+  height: 150px;
+}
+
+.logotyp {
+  width: 120px;
+}
+
+.ikon1,
+.ikon2 {
+  max-height: 40px;
+}
+.custom-list {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.custom-list .list-group-item {
+  pointer-events: none;
+  background-color: var(--primary);
+  border: none;
+  position: relative;
+  padding: 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+  width: 60px;
+  margin-top: 70px;
+}
+.custom-list .list-group-item:hover {
+background-color: var(--secondary-light);
+width: 100%;
+}
+.custom-list .list-group-item:hover::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+  color: var(--text);
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+.custom-list .list-group-item::after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+.custom-list .list-group-item:first-child {
+  margin-left: 0;
+}
+.custom-list .list-group-item:last-child {
+  margin-right: 0;
+}
